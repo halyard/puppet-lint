@@ -2,7 +2,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require 'puppet-lint/version'
 
 Gem::Specification.new do |s|
-  s.name = 'puppet-lint'
+  s.name = 'puppet-lint-halyard'
   s.version = PuppetLint::VERSION
   s.homepage = 'https://github.com/rodjek/puppet-lint/'
   s.summary = 'Ensure your Puppet manifests conform with the Puppetlabs style guide'
