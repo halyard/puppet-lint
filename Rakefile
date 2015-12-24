@@ -1,6 +1,14 @@
-require 'rake'
+require 'bundler/gem_tasks'
 require 'rspec/core/rake_task'
+require 'rubocop/rake_task'
 
-task :default => :test
+desc 'Run tests'
+RSpec::Core::RakeTask.new(:spec)
 
-RSpec::Core::RakeTask.new(:test)
+desc 'Run Rubocop on the gem'
+RuboCop::RakeTask.new(:rubocop) do |task|
+  task.patterns = ['lib/**/*.rb', 'spec/**/*.rb']
+  task.fail_on_error = true
+end
+
+task default: [:spec, :rubocop, :build, :install]

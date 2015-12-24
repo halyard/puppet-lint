@@ -7,6 +7,7 @@ guide](http://docs.puppetlabs.com/guides/style_guide.html) as practical. It is n
 ## Changes from upstream
 
 * Released as puppet-lint-halyard
+* Adjust rakefile to simplify publishing
 
 ## Installation
 
