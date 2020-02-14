@@ -1,3 +1,5 @@
+**Deprecation Notice:** I'm in the process of revamping my puppet work, this repo is currently not up to date.
+
 # Puppet-lint
 
 The goal of this project is to implement as many of the recommended Puppet
